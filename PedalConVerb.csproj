@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Browser display name comes from the .dll filename. The ".NET" suffix
+         is mandatory: ReBuzz routes DLLs without it to native LoadLibrary
+         which fails for managed assemblies. (Build §2) -->
+    <AssemblyName>Pedal ConVerb.NET</AssemblyName>
+    <RootNamespace>PedalConVerb</RootNamespace>
+
+    <!-- Mandatory deployment hygiene (Build §1.2):
+           ReBuzz only loads the .dll; .pdb and .deps.json must not be
+           deployed. MSB3277 suppresses noisy version-conflict warnings
+           caused by ReBuzz shipping older-framework DLLs. -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <NoWarn>MSB3277</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ReBuzz">
+      <HintPath>C:\Program Files\ReBuzz\ReBuzz.exe</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BuzzGUI.Interfaces">
+      <HintPath>C:\Program Files\ReBuzz\BuzzGUI.Interfaces.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="DeployToReBuzz" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)"
+          DestinationFolder="C:\Program Files\ReBuzz\Gear\Effects" />
+  </Target>
+
+</Project>
