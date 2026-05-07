@@ -1,9 +1,0 @@
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\PedalConVerb.csproj.AssemblyReference.cache
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\PedalConVerb.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\PedalConVerb.AssemblyInfoInputs.cache
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\PedalConVerb.AssemblyInfo.cs
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\PedalConVerb.csproj.CoreCompileInputs.cache
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\bin\Release\net10.0-windows\Pedal ConVerb.NET.dll
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\Pedal ConVerb.NET.dll
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\refint\Pedal ConVerb.NET.dll
-C:\Users\lukep\Desktop\projex_2026\ReBuzz_pedal_machines\Pedal ConVerb\pedalconverb\obj\Release\net10.0-windows\ref\Pedal ConVerb.NET.dll
